@@ -80,3 +80,7 @@ go ahead and commit
 ---
 
 1.) i seem them as committed 2.) yes lets either update .gitignore or make it output to dist/ (and then ignore dist/)
+
+---
+
+ammend the previous commit with this change
