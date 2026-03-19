@@ -20,3 +20,7 @@ surprised you made that plan, but I didn't tell you not to. You can leave the fi
 ---
 
 lets create a README at the repo root that explains what we're doing, the directory layout, etc.
+
+---
+
+lets commit just the staged changes
