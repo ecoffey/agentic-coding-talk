@@ -1,0 +1,32 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "ef7cc6a554a7",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 7,
+  "files_touched": [
+    "README.md",
+    "_plans/2026-03-18-slides-skeleton-high-level.md",
+    "_plans/2026-03-18-slides-skeleton-impl.md",
+    "slides/.gitignore",
+    "slides/README.md",
+    "slides/package-lock.json",
+    "slides/package.json",
+    "slides/slides.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/ef/7cc6a554a7/0/metadata.json",
+      "transcript": "/ef/7cc6a554a7/0/full.jsonl",
+      "content_hash": "/ef/7cc6a554a7/0/content_hash.txt",
+      "prompt": "/ef/7cc6a554a7/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 72,
+    "cache_creation_tokens": 54236,
+    "cache_read_tokens": 1248224,
+    "output_tokens": 14523,
+    "api_call_count": 44
+  }
+}
