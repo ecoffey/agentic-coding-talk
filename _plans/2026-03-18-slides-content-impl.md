@@ -1,3 +1,16 @@
+# Slides Content — Implementation Detail
+
+## § Implementation Detail
+
+No tests. One file changes: `slides/slides.md` is replaced in full.
+
+---
+
+### Step 1 — Replace `slides/slides.md`
+
+**File:** `slides/slides.md` (full replacement)
+
+```markdown
 ---
 marp: true
 theme: default
@@ -134,3 +147,12 @@ The talk is its own demo. You don't have to take my word for any of this.
 - This repo: <!-- TODO: add repo URL when published -->
 - [Marp](https://marp.app/) — slide tool used for this deck
 - [entire.io](https://entire.io) — bottom-up session recording
+```
+
+---
+
+### Files changed summary
+
+| File | Action |
+|---|---|
+| `slides/slides.md` | Full replacement — 4 stubs → 13 slides with content |
