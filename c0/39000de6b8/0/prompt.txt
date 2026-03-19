@@ -76,3 +76,7 @@ You can also see the content at ~/workspace/ecoffey.github.com
 ---
 
 go ahead and commit
+
+---
+
+1.) i seem them as committed 2.) yes lets either update .gitignore or make it output to dist/ (and then ignore dist/)
