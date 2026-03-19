@@ -1,0 +1,12 @@
+{
+  "name": "agentic-coding-talk-slides",
+  "private": true,
+  "scripts": {
+    "dev":   "marp --preview slides.md",
+    "build": "marp slides.md -o dist/slides.html",
+    "pdf":   "marp slides.md -o dist/slides.pdf"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4"
+  }
+}

@@ -36,6 +36,6 @@ Topics covered:
 ```
 ├── README.md          # you are here
 ├── AGENT.md           # context for the AI coding agent working in this repo
-├── slides/            # slide deck
+├── slides/            # slide deck (Marp — run `npm run dev` to preview)
 └── project/           # logpipe — the toy demo project
 ```
