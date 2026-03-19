@@ -1,0 +1,22 @@
+I'm going to be giving a talk about agentic coding and how it interacts with general software development for the University of Colorado (CU) ATLS 4214 - Big Data Architecture class. https://www.colorado.edu/atlas/academics/undergraduate/bs-ctd-focus-electives https://www.coursicle.com/colorado/courses/ATLS/4214/. This repo will hold both the slide deck and a toy project. I will be developing both concurrently. I'm using entire.io (https://entire.io/) to record my work from the "bottom-up" and will be using the "plan", "process feedback", and "implement" skills at ~/.claude/skills for the "top down" aspect. lets start by creating a bare bones agent.md file, and then talk through what a good toy project would be.
+
+---
+
+I'm leaning towards Option A. I already know that I want to heavily use "black box" integration testing as the harness to drive this, and I feel like it would fit well with Option A.
+
+---
+
+1.) CLI tool 
+2.) Lets start with ingest and query, but I'd like to make alerting, etc a stretch goal (or left to reader!)
+3.) Sure, DuckDB is fine if it has a clean testcontainers image. Sqlite would also work well for the black box tests.
+4.) Pytest is fine, and yes it should be runnable by students. I plan on sharing this whole repo with them.
+
+I think Python is a good clean implemenation language for this, so lets go with that as well.
+
+---
+
+surprised you made that plan, but I didn't tell you not to. You can leave the file there, I'll come back to it
+
+---
+
+lets create a README at the repo root that explains what we're doing, the directory layout, etc.
