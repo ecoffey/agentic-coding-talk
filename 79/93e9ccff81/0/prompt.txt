@@ -112,3 +112,7 @@ yeah what you suggested sounds good and lets also link to the blog post
 ---
 
 do you have `entire` in your $PATH?
+
+---
+
+great. go ahead and commit all the changes
