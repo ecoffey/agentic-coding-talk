@@ -1,0 +1,18 @@
+[project]
+name = "logpipe"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["typer"]
+
+[project.scripts]
+logpipe = "logpipe.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = ["pytest"]
