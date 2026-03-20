@@ -27,7 +27,7 @@ An agent that can **read your codebase**, **write files**, **run tests**, and **
 - Tell it *what* you want, not *how* to do it
   - Describe the outcome, constraints, and context
   - Leave implementation to the tool unless the "how" is critical
-- The tool leverages the "language" you've already put in place
+- Sweating the details — naming, internal APIs, structure — creates a semantically compact language that both you *and* the LLM can reason in effectively
 
 ---
 
@@ -131,6 +131,7 @@ The talk is its own demo. You don't have to take my word for any of this.
 # Q&A / Resources
 
 - Blog post: [eoinisawesome.com/2026/02/16/agentic-coding.html](https://eoinisawesome.com/2026/02/16/agentic-coding.html)
+- Semantic Compression: [caseymuratori.com/blog_0015](https://caseymuratori.com/blog_0015)
 - This repo: <!-- TODO: add repo URL when published -->
 - [Marp](https://marp.app/) — slide tool used for this deck
 - [entire.io](https://entire.io) — bottom-up session recording
