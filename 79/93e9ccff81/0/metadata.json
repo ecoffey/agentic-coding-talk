@@ -1,0 +1,44 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "7993e9ccff81",
+  "session_id": "4f642a37-a357-4c36-bd50-fafde20be7f2",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-20T02:24:13.548716Z",
+  "branch": "main",
+  "checkpoints_count": 4,
+  "files_touched": [
+    "_plans/2026-03-19-logpipe-skeleton-high-level.md",
+    "_plans/2026-03-19-logpipe-skeleton-impl.md",
+    "project/README.md",
+    "project/logpipe/__init__.py",
+    "project/logpipe/__main__.py",
+    "project/logpipe/cli.py",
+    "project/logpipe/parser.py",
+    "project/pyproject.toml",
+    "project/tests/conftest.py",
+    "project/tests/test_ingest.py",
+    "project/uv.lock"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-4-6",
+  "turn_id": "e29e800ee0c6",
+  "token_usage": {
+    "input_tokens": 198,
+    "cache_creation_tokens": 176598,
+    "cache_read_tokens": 7114166,
+    "output_tokens": 44420,
+    "api_call_count": 128
+  },
+  "session_metrics": {
+    "turn_count": 28
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-20T02:24:13.206874Z",
+    "agent_lines": 866,
+    "human_added": 6,
+    "human_modified": 1,
+    "human_removed": 0,
+    "total_committed": 873,
+    "agent_percentage": 99.19816723940436
+  }
+}
