@@ -1,0 +1,39 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "21c597eea2fc",
+  "session_id": "e0eef63d-88c1-418f-94bd-6cd26b8e1d85",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-21T22:57:21.598874Z",
+  "branch": "main",
+  "checkpoints_count": 4,
+  "files_touched": [
+    "_plans/2026-03-21-window-stage-high-level.md",
+    "_plans/2026-03-21-window-stage-impl.md",
+    "project/ARCHITECTURE.md",
+    "project/logpipe/cli.py",
+    "project/logpipe/stages/__init__.py",
+    "project/logpipe/stages/window.py",
+    "project/tests/test_window.py"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "ce05741b1f93",
+  "token_usage": {
+    "input_tokens": 52,
+    "cache_creation_tokens": 114698,
+    "cache_read_tokens": 1488834,
+    "output_tokens": 19266,
+    "api_call_count": 33
+  },
+  "session_metrics": {
+    "turn_count": 4
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-21T22:57:21.423504Z",
+    "agent_lines": 667,
+    "human_added": 2,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 669,
+    "agent_percentage": 99.70104633781763
+  }
+}

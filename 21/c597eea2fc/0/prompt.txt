@@ -1,0 +1,13 @@
+/plan lets tackle the "window" stage
+
+---
+
+/implement
+
+---
+
+/process-feedback
+
+---
+
+/implement
