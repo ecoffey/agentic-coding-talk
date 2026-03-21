@@ -1,4 +1,12 @@
 {
+  "permissions": {
+    "deny": [
+      "Read(./.entire/metadata/**)"
+    ],
+    "allow": [
+      "Bash(find /Users/eoin/workspace/agentic-coding-talk -not -path */node_modules/* -type f)"
+    ]
+  },
   "hooks": {
     "PostToolUse": [
       {
@@ -74,11 +82,6 @@
           }
         ]
       }
-    ]
-  },
-  "permissions": {
-    "deny": [
-      "Read(./.entire/metadata/**)"
     ]
   }
 }

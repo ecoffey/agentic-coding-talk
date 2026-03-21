@@ -18,8 +18,8 @@ uv sync
 Parse log lines and echo them as JSON:
 
 ```bash
-uv run logpipe access.log
-uv run logpipe -          # read from stdin
+uv run logpipe ingest access.log
+uv run logpipe ingest -   # read from stdin
 ```
 
 Output is one JSON object per valid line:
@@ -29,6 +29,28 @@ Output is one JSON object per valid line:
 ```
 
 Malformed lines are silently skipped.
+
+### Query logs
+
+Filter log records with a WHERE expression:
+
+```bash
+uv run logpipe query "status >= 400" access.log
+uv run logpipe query "status >= 400" -     # read from stdin
+```
+
+Expressions support `=`, `!=`, `<`, `>`, `<=`, `>=` (numeric/string), and `~` (substring):
+
+```bash
+uv run logpipe query "status >= 400 AND method = POST" access.log
+uv run logpipe query "status = 200 OR status = 201" access.log
+uv run logpipe query "path ~ /api" access.log
+uv run logpipe query "response_time > 1.0" access.log
+```
+
+Filterable fields: `host`, `user`, `ts`, `method`, `path`, `status`, `bytes`, `response_time`.
+
+Output is one JSON object per matching line. Non-matching lines produce no output.
 
 ## Run tests
 

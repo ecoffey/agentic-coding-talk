@@ -23,7 +23,7 @@ class LogRecord:
     response_time: float
 
 
-def parse_line(line: str) -> LogRecord | None:
+def parse_log_record(line: str) -> LogRecord | None:
     m = LOG_PATTERN.match(line.strip())
     if not m:
         return None
