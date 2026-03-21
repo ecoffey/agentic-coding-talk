@@ -1,0 +1,9 @@
+whats the other active conversation?
+
+---
+
+I want you to examine https://docs.entire.io/ and give me an overview of the data model it uses and how I might better use the tool in this repo
+
+---
+
+great! lets write this to ENTIREIO.MD in the repo root and re-work the "How you could use it better" to be a "How entire.io is being used"
