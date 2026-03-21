@@ -16,7 +16,7 @@ FROM  →  WHERE  →  WINDOW  →  AGGREGATE  →  SELECT  →  HAVING
 |-------|-----|--------|-------------|
 | FROM | positional `source` arg | Implemented (via `ingest`) | Log file path or `-` for stdin |
 | WHERE | positional `expr` arg | Planned (current work) | Filter expression string, e.g. `"status >= 400 AND method = POST"` |
-| WINDOW | `--window` | Future | Partition stream into time-based buckets before aggregation |
+| WINDOW | `--window` | Implemented (tumbling only) | Partition stream into fixed-size time buckets before aggregation |
 | AGGREGATE | `--group-by`, aggregate functions in SELECT | Future | Group records and compute aggregates (within each window if WINDOW is active) |
 | SELECT | `--select` | Future | Project fields; define computed / aggregated columns |
 | HAVING | `--having` | Future | Filter on projected / aggregated values |
@@ -233,9 +233,11 @@ When a stage is omitted from the CLI invocation, it is a no-op passthrough (or s
 ```
 logpipe/
   parser.py        LogRecord, parse_line()              (done)
-  query.py         Stage, Pipeline, WhereStage,         (in progress)
-                   AggregateStage, SelectStage,
-                   HavingStage, expression parsers
+  query.py         Stage, Pipeline, WhereStage,         (done)
+                   expression parsers
+  stages/
+    window.py      WindowSpec, WindowBucket,            (done)
+                   WindowStage, parse_duration()
   cli.py           ingest + query commands               (extending)
 ```
 
@@ -246,4 +248,3 @@ logpipe/
 - SQL string parsing (no `SELECT ... FROM ... WHERE` syntax — each clause is a separate CLI flag)
 - Joins across multiple sources
 - Persistent storage or indexing
-- Windowing / time-bucketing (may be added as a variant of AGGREGATE)

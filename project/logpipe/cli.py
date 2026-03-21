@@ -6,7 +6,8 @@ from typing import Annotated
 import typer
 
 from logpipe.parser import parse_log_record
-from logpipe.query import Pipeline, WhereStage, parse_predicate
+from logpipe.query import Pipeline, Stage, WhereStage, parse_predicate
+from logpipe.stages.window import WindowBucket, WindowSpec, WindowStage, parse_duration
 
 app = typer.Typer()
 
@@ -31,15 +32,28 @@ def ingest(
 def query(
     expr: Annotated[str, typer.Argument(help="Filter expression, e.g. 'status >= 400 AND method = POST'")],
     source: Annotated[str, typer.Argument(help="Log file path, or - for stdin")],
+    window: Annotated[str | None, typer.Option("--window", help="Tumbling window size, e.g. 5m, 1h, 30s")] = None,
 ):
     """Query log records with a filter expression."""
-    pipeline = Pipeline([WhereStage(parse_predicate(expr))])
+    stages: list[Stage] = [WhereStage(parse_predicate(expr))]
+    if window is not None:
+        stages.append(WindowStage(WindowSpec(size_secs=parse_duration(window))))
+
+    pipeline = Pipeline(stages)
     fh = sys.stdin if source == "-" else open(source)
     try:
         raw_records = (parse_log_record(line) for line in fh)
         valid_records = (r for r in raw_records if r is not None)
-        for record in pipeline.run(valid_records):
-            print(json.dumps(asdict(record)))
+        for item in pipeline.run(valid_records):
+            if isinstance(item, WindowBucket):
+                print(json.dumps({
+                    "window_start": item.window_start,
+                    "window_end": item.window_end,
+                    "count": len(item.records),
+                    "records": [asdict(r) for r in item.records],
+                }))
+            else:
+                print(json.dumps(asdict(item)))
     finally:
         if fh is not sys.stdin:
             fh.close()
