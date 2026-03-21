@@ -233,9 +233,10 @@ When a stage is omitted from the CLI invocation, it is a no-op passthrough (or s
 ```
 logpipe/
   parser.py        LogRecord, parse_line()              (done)
-  query.py         Stage, Pipeline, WhereStage,         (done)
+  query.py         Stage, Pipeline, Predicate,          (done)
                    expression parsers
   stages/
+    where.py       WhereStage                           (done)
     window.py      WindowSpec, WindowBucket,            (done)
                    WindowStage, parse_duration()
   cli.py           ingest + query commands               (extending)

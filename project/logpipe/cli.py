@@ -6,7 +6,8 @@ from typing import Annotated
 import typer
 
 from logpipe.parser import parse_log_record
-from logpipe.query import Pipeline, Stage, WhereStage, parse_predicate
+from logpipe.query import Pipeline, Stage
+from logpipe.stages.where import WhereStage, parse_predicate
 from logpipe.stages.window import WindowBucket, WindowSpec, WindowStage, parse_duration
 
 app = typer.Typer()
