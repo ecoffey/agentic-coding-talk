@@ -20,3 +20,8 @@ hmmm ok. i think the predicat, exprparser class, FilterExpr, etc can all move to
 ---
 
 go ahead
+
+---
+
+<ide_opened_file>The user opened the file /Users/eoin/workspace/agentic-coding-talk/project/ARCHITECTURE.md in the IDE. This may or may not be related to the current task.</ide_opened_file>
+looks good! commit
