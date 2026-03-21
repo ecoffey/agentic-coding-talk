@@ -1,0 +1,36 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "5719bcdbe4e0",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 8,
+  "files_touched": [
+    ".claude/settings.json",
+    ".gitignore",
+    "_plans/2026-03-21-querying-filtering-high-level.md",
+    "_plans/2026-03-21-querying-filtering-impl.md",
+    "project/ARCHITECTURE.md",
+    "project/README.md",
+    "project/logpipe/cli.py",
+    "project/logpipe/parser.py",
+    "project/logpipe/query.py",
+    "project/tests/conftest.py",
+    "project/tests/test_ingest.py",
+    "project/tests/test_query.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/57/19bcdbe4e0/0/metadata.json",
+      "transcript": "/57/19bcdbe4e0/0/full.jsonl",
+      "content_hash": "/57/19bcdbe4e0/0/content_hash.txt",
+      "prompt": "/57/19bcdbe4e0/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 84,
+    "cache_creation_tokens": 143087,
+    "cache_read_tokens": 3641344,
+    "output_tokens": 45797,
+    "api_call_count": 53
+  }
+}

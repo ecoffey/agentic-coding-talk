@@ -1,0 +1,44 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "5719bcdbe4e0",
+  "session_id": "282199bd-de81-4a36-ac59-9f804c059101",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-21T18:00:10.879786Z",
+  "branch": "main",
+  "checkpoints_count": 8,
+  "files_touched": [
+    ".claude/settings.json",
+    ".gitignore",
+    "_plans/2026-03-21-querying-filtering-high-level.md",
+    "_plans/2026-03-21-querying-filtering-impl.md",
+    "project/ARCHITECTURE.md",
+    "project/README.md",
+    "project/logpipe/cli.py",
+    "project/logpipe/parser.py",
+    "project/logpipe/query.py",
+    "project/tests/conftest.py",
+    "project/tests/test_ingest.py",
+    "project/tests/test_query.py"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "fbfabb486eeb",
+  "token_usage": {
+    "input_tokens": 84,
+    "cache_creation_tokens": 143087,
+    "cache_read_tokens": 3641344,
+    "output_tokens": 45797,
+    "api_call_count": 53
+  },
+  "session_metrics": {
+    "turn_count": 8
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-21T18:00:10.583847Z",
+    "agent_lines": 1523,
+    "human_added": 12,
+    "human_modified": 4,
+    "human_removed": 0,
+    "total_committed": 1539,
+    "agent_percentage": 98.96036387264458
+  }
+}
