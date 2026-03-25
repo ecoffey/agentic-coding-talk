@@ -1,0 +1,38 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "327449fac735",
+  "session_id": "5ac960af-bfbf-4c68-ad9a-dc299b068e93",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-25T02:31:55.665519Z",
+  "branch": "main",
+  "checkpoints_count": 6,
+  "files_touched": [
+    "_plans/2026-03-21-aggregate-stage-high-level.md",
+    "_plans/2026-03-21-aggregate-stage-impl.md",
+    "project/ARCHITECTURE.md",
+    "project/logpipe/cli.py",
+    "project/logpipe/stages/aggregate.py",
+    "project/tests/test_aggregate.py"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "8458df3cbc18",
+  "token_usage": {
+    "input_tokens": 112,
+    "cache_creation_tokens": 256688,
+    "cache_read_tokens": 2770510,
+    "output_tokens": 23526,
+    "api_call_count": 64
+  },
+  "session_metrics": {
+    "turn_count": 11
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-25T02:31:55.487778Z",
+    "agent_lines": 660,
+    "human_added": 1,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 661,
+    "agent_percentage": 99.84871406959152
+  }
+}
