@@ -1,0 +1,54 @@
+<ide_opened_file>The user opened the file /Users/eoin/workspace/agentic-coding-talk/slides/slides.md in the IDE. This may or may not be related to the current task.</ide_opened_file>
+here is the talk repo for the Q&A slie: https://github.com/ecoffey/agentic-coding-talk
+
+---
+
+<ide_opened_file>The user opened the file /Users/eoin/workspace/agentic-coding-talk/slides/slides.md in the IDE. This may or may not be related to the current task.</ide_opened_file>
+somewhere in these slides I want to say "what works well for other human engineers, also works well for LLMs: naming, conventions, correct abstractions, tests". Where do you think that should go?
+
+---
+
+<ide_opened_file>The user opened the file /Users/eoin/workspace/agentic-coding-talk/slides/slides.md in the IDE. This may or may not be related to the current task.</ide_opened_file>
+I like LLMs are a tool, especially when you consider the speaker notes I've added to that slide. What do you think?
+
+---
+
+yeah lets merge them
+
+---
+
+<ide_selection>The user selected the lines 41 to 41 from /Users/eoin/workspace/agentic-coding-talk/slides/slides.md:
+# Fundamentals still matter
+
+This may or may not be related to the current task.</ide_selection>
+# Fundamentals still matter: I want to add a speaker note to express the idea of "accidental friction is earned: its important to struggle with a tool or concept and understand before it becomes mechanical and is now in the way of acheiving a higher level of intent. I like the analogy "being able to open the hood of a car and recognize the major moving pieces of an engine"
+
+---
+
+another idea for how to layout the slides: i bet there are good examples in the plans that are relevant to all these things. would it be better to introduce logpipe at the beginning of the talk, and then show snippets from plan files? (e.g. for "naming, correct abstractions", I gave plan feedback around both of those).
+
+---
+
+<ide_opened_file>The user opened the file /Users/eoin/workspace/agentic-coding-talk/slides/slides.md in the IDE. This may or may not be related to the current task.</ide_opened_file>
+Yes go ahed
+
+---
+
+looks good. can we pull an example for Theme 3?
+
+---
+
+I actually like having both. The plan instructions show how I want the agent to work and the code is the obvious realization of that intent that I can audit and confirm
+
+---
+
+ok this is all looking good. Anything you change in my speaker notes give this new flow?
+
+---
+
+<ide_opened_file>The user opened the file /Users/eoin/workspace/agentic-coding-talk/slides/slides.md in the IDE. This may or may not be related to the current task.</ide_opened_file>
+any thoughts on if/how the live demo sections should change now?
+
+---
+
+lets collapse it
