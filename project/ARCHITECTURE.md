@@ -17,7 +17,7 @@ FROM  →  WHERE  →  WINDOW  →  AGGREGATE  →  SELECT  →  HAVING
 | FROM | positional `source` arg | Implemented (via `ingest`) | Log file path or `-` for stdin |
 | WHERE | positional `expr` arg | Planned (current work) | Filter expression string, e.g. `"status >= 400 AND method = POST"` |
 | WINDOW | `--window` | Implemented (tumbling only) | Partition stream into fixed-size time buckets before aggregation |
-| AGGREGATE | `--group-by`, aggregate functions in SELECT | Future | Group records and compute aggregates (within each window if WINDOW is active) |
+| AGGREGATE | `--group-by` | Implemented | Group records and compute count + sum/avg/min/max for numeric fields per group (within each window if WINDOW is active) |
 | SELECT | `--select` | Future | Project fields; define computed / aggregated columns |
 | HAVING | `--having` | Future | Filter on projected / aggregated values |
 
@@ -239,6 +239,8 @@ logpipe/
     where.py       WhereStage                           (done)
     window.py      WindowSpec, WindowBucket,            (done)
                    WindowStage, parse_duration()
+    aggregate.py   AggregateStage, NUMERIC_FIELDS,      (done)
+                   _aggregate_records()
   cli.py           ingest + query commands               (extending)
 ```
 
