@@ -1,10 +1,15 @@
 {
   "permissions": {
+    "allow": [
+      "Bash(find /Users/eoin/workspace/agentic-coding-talk -not -path */node_modules/* -type f)",
+      "Bash(python3 -m pytest tests/test_window.py -q)",
+      "Bash(source .venv/bin/activate)",
+      "Bash(.venv/bin/pytest tests/test_window.py -q)",
+      "Bash(.venv/bin/pytest tests/ -q)",
+      "Bash(.venv/bin/pytest tests/test_query.py tests/test_window.py -v)"
+    ],
     "deny": [
       "Read(./.entire/metadata/**)"
-    ],
-    "allow": [
-      "Bash(find /Users/eoin/workspace/agentic-coding-talk -not -path */node_modules/* -type f)"
     ]
   },
   "hooks": {
