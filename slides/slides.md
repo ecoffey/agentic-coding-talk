@@ -7,6 +7,8 @@ paginate: true
 # Agentic Coding
 ### How AI agents change the way we build software
 
+**Eoin Coffey**: https://eoinisawesome.com
+
 ---
 
 # What is agentic coding?
